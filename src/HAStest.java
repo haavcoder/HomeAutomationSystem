@@ -1,0 +1,33 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class HAStest {
+
+	@Test
+	public void test() {
+		
+		System.out.println("-------------------------------Home Automation System--------------------------");
+		System.out.println("-------------------------------------------------------------------------------\n\n");
+		
+		 TubeLight light= new TubeLight(1);
+		 light.setLight(light);
+		 
+		 AirConditoner AC=new AirConditoner(0,1); // 0=OFF 1=ON  AC is On and temperature up by 1
+		 AC.SetAc(AC);
+		 AC.SetTemp(AC);
+		 
+		 WashingMachine WM =new WashingMachine(1,1); //0=OFF 1=On Washing machine is on and it set to Rinse
+		 WM.SetWM(WM);
+		 WM.Wash(WM);
+		 
+		 TV tv =new TV(1,-1,1);  // 0=OFF and 1=On TV is on channel and volume set to up i.e 1
+		 tv.SetTv(tv);
+		 tv.SetChannel(tv);
+		 tv.SetVolume(tv);
+		 
+		 
+		 
+	}
+
+}
